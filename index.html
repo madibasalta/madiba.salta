@@ -239,11 +239,9 @@
     justify-content:center;
     overflow:hidden;
   }
-  .photo-slot.founders{max-width:400px; height:400px; margin:44px auto 0;}
-  .photo-slot.section-photo{aspect-ratio:1/1; height:auto; margin-top:56px;}
-  .photo-slot .placeholder-label{
-    font-size:13px; color:var(--ink-soft); letter-spacing:0.05em;
-    pointer-events:none; text-align:center; padding:0 20px;
+ .photo-slot img{width:100%; height:100%; object-fit:cover; display:none;}
+.photo-slot.has-photo img{display:block;}
+.photo-slot.has-photo .placeholder-label{display:none;}
   }
 .photo-slot img{width:100%; height:100%; object-fit:cover; display:none;}
 .photo-slot.has-photo img{display:block;}
@@ -354,7 +352,7 @@
       <h2 data-editable data-key="intro-title">Madiba nació de una casa de campo que fue construyéndose con el tiempo, con trabajo, dedicación y muchas cosas hechas con las propias manos.</h2>
       <p data-editable data-key="intro-body">Lo que comenzó como un lugar de encuentro y descanso fue tomando nuevas formas: hoy es una casa de campo que recibe a quienes buscan disfrutar del entorno y bajar el ritmo, y también un espacio donde el arte y la creatividad tienen su lugar. Madiba reúne esas dos maneras de vivir el espacio: descansar y crear.</p>
       <p data-editable data-key="intro-why" style="margin-top:18px; font-family:'Oooh Baby', cursive; font-size:24px; color:var(--clay-dark);">
-        El nombre Madiba, como se conocía afectuosamente a Nelson Mandela, representa valores que forman parte de la esencia del proyecto: libertad, unión, respeto y transformación.</p>
+        El nombre Madiba, como se conocía afectuosamente a Nelson Mandela,para nosotros ese nombre representa mucho más que un homenaje. Representa valores que queremos que formen parte de este lugar: la libertad, la dignidad, el respeto por el otro, la convivencia, la esperanza y la capacidad de transformar la realidad a través de nuestras propias manos.</p>
     </div>
     <div class="photo-slot founders has-photo">
       <img src="caballos.jpeg" alt="Claudia y Nepo">
@@ -468,6 +466,10 @@
       <img src="juegogirasol.jpg" alt="Taller Madiba">
     </div>
 
+    <div class="gallery-photo">
+      <img src="hojaste.jpg" alt="Taller Madiba">
+    </div>
+
   </div>
 
   <div class="gallery-credit">
@@ -483,22 +485,22 @@
       <div class="card reveal">
         <div class="num">01</div>
         <h3 data-editable data-key="store-card1-title">Cerámica</h3>
-        <p data-editable data-key="store-card1-body">Piezas torneadas y esmaltadas para la mesa y la casa.</p>
+        <p data-editable data-key="store-card1-body">Trabajar la arcilla con las manos para crear piezas únicas, dando forma, textura y carácter a cada creación. Una técnica que invita a experimentar y disfrutar del proceso.</p>
       </div>
       <div class="card reveal">
         <div class="num">02</div>
         <h3 data-editable data-key="store-card2-title">Puntillismo</h3>
-        <p data-editable data-key="store-card2-body">Cuadros armados color por color, punto por punto.</p>
+        <p data-editable data-key="store-card2-body">Una técnica que crea imágenes y formas a partir de pequeños puntos de color. Puede aplicarse sobre distintas superficies, transformando cada pieza con color, detalle y paciencia.</p>
       </div>
       <div class="card reveal">
         <div class="num">03</div>
-        <h3 data-editable data-key="store-card3-title">Mixed media</h3>
-        <p data-editable data-key="store-card3-body">Obras que combinan texturas, materiales y técnicas libremente.</p>
+        <h3 data-editable data-key="store-card3-title">Arte & Materia</h3>
+        <p data-editable data-key="store-card3-body">Obras que combinan texturas, materiales y técnicas libremente, dejando espacio para experimentar, mezclar y crear sin límites..</p>
       </div>
       <div class="card reveal">
         <div class="num">04</div>
         <h3 data-editable data-key="store-card4-title">Porcelana fría</h3>
-        <p data-editable data-key="store-card4-body">Figuras y detalles moldeados a mano, sin horno.</p>
+        <p data-editable data-key="store-card4-body">Una masa moldeable que permite crear figuras, detalles y objetos completamente a mano. Se trabaja modelando y dando forma a cada pieza, sin necesidad de horno.</p>
       </div>
     </div>
     <div class="cta-row reveal">
