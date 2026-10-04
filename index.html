@@ -132,6 +132,28 @@
     text-align:center;
 }
 .history-content h2{font-size:clamp(24px,3.4vw,32px);}
+    .slideshow{
+    position:relative; width:100%; max-width:680px;
+    aspect-ratio:16/9; margin:40px auto 0;
+    overflow:hidden; border-radius:2px;
+}
+.slideshow img{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:cover; opacity:0;
+    animation:slideshowFade 25s infinite;
+}
+.slideshow img:nth-child(1){ animation-delay:0s; }
+.slideshow img:nth-child(2){ animation-delay:5s; }
+.slideshow img:nth-child(3){ animation-delay:10s; }
+.slideshow img:nth-child(4){ animation-delay:15s; }
+.slideshow img:nth-child(5){ animation-delay:20s; }
+@keyframes slideshowFade{
+    0%{ opacity:0; }
+    4%{ opacity:1; }
+    20%{ opacity:1; }
+    24%{ opacity:0; }
+    100%{ opacity:0; }
+}
 
   /* DOT BRIDGE — signature element */
   .bridge{
@@ -368,6 +390,13 @@
           <p data-editable data-key="history-body">El nombre Madiba, como se conocía afectuosamente a Nelson Mandela, representa para nosotros mucho más que un homenaje: la libertad, la dignidad, el respeto por el otro, la convivencia, la esperanza y la capacidad de transformar la realidad a través de nuestras propias manos.</p>
         </div>
       </details>
+            <div class="slideshow">
+        <img src="pajarito.jpeg" alt="Pájaro en El Encón">
+        <img src="gauchos.jpeg" alt="Gauchos a caballo en El Encón">
+        <img src="caballos.jpeg" alt="Caballos al atardecer en El Encón">
+        <img src="frente.jpeg" alt="Jinete y perro en El Encón">
+        <img src="pajaros.jpeg" alt="Bandada de pájaros sobre El Encón">
+      </div>
     </div>
     <div class="photo-slot founders has-photo">
       <img src="arbol.casaa.jpeg" alt="Claudia y Nepo">
