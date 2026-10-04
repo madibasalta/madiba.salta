@@ -122,6 +122,16 @@
   .intro{max-width:680px; margin:0 auto; text-align:center;}
   .intro h2{font-size:clamp(28px,4vw,38px); margin:14px 0 20px; font-style:italic; font-weight:500;}
   .intro p{font-size:17px; color:var(--ink-soft);}
+    .history-details{ margin-top:32px; }
+.history-details summary{
+    display:inline-block; cursor:pointer; list-style:none;
+}
+.history-details summary::-webkit-details-marker{ display:none; }
+.history-content{
+    margin-top:32px; padding-top:28px; border-top:1px solid var(--line);
+    text-align:center;
+}
+.history-content h2{font-size:clamp(24px,3.4vw,32px);}
 
   /* DOT BRIDGE — signature element */
   .bridge{
@@ -348,13 +358,19 @@
 <section class="intro">
   <div class="wrap">
     <div class="reveal">
-      <div class="eyebrow" data-editable data-key="intro-eyebrow">La historia</div>
-            <h2 data-editable data-key="intro-title">Madiba nació en una casa de campo que fue tomando forma con los años, entre trabajo, dedicación y el deseo de crear con las propias manos un lugar para compartir y disfrutar.
-            </h2>
-      <p data-editable data-key="intro-body">El nombre Madiba, como se conocía afectuosamente a Nelson Mandela, representa para nosotros mucho más que un homenaje: la libertad, la dignidad, el respeto por el otro, la convivencia, la esperanza y la capacidad de transformar la realidad a través de nuestras propias manos.</p>
+      <div class="eyebrow" data-editable data-key="intro-eyebrow">Bienvenidos</div>
+      <h2 data-editable data-key="intro-title">¡Bienvenidos a Madiba!</h2>
+      <p data-editable data-key="intro-body">Estamos en el campo salteño, a 20 minutos de la ciudad de Salta, entre los cerros y cerca del Río Arenales — un lugar para hospedarse, descansar y también crear.</p>
+      <details class="history-details">
+        <summary class="btn ghost">Conocé nuestra historia</summary>
+        <div class="history-content">
+          <h2 data-editable data-key="history-title">Madiba nació de una casa de campo que fue construyéndose con el tiempo, con trabajo, dedicación y muchas cosas hechas con las propias manos.</h2>
+          <p data-editable data-key="history-body">El nombre Madiba, como se conocía afectuosamente a Nelson Mandela, representa para nosotros mucho más que un homenaje: la libertad, la dignidad, el respeto por el otro, la convivencia, la esperanza y la capacidad de transformar la realidad a través de nuestras propias manos.</p>
+        </div>
+      </details>
     </div>
     <div class="photo-slot founders has-photo">
-      <img src="caballos.jpeg" alt="Claudia y Nepo">
+      <img src="arbol.casaa.jpeg" alt="Claudia y Nepo">
     </div>
   </div>
 </section>
