@@ -53,7 +53,7 @@
 
   /* HERO */
   .hero{
-    min-height:92vh;
+    min-height:70vh;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -354,10 +354,46 @@
   }
 }
 </style>
+  .quick-nav{ position:fixed; top:18px; left:18px; z-index:999; }
+.quick-nav-btn{
+    background:var(--cream); color:var(--ink); border:1px solid var(--ink);
+    padding:8px 14px; border-radius:999px; font-family:'Work Sans', sans-serif;
+    font-size:12px; font-weight:600; letter-spacing:0.05em; cursor:pointer;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08); list-style:none;
+}
+.quick-nav-btn::-webkit-details-marker{ display:none; }
+.quick-nav-menu{
+    position:absolute; top:40px; left:0; background:var(--cream);
+    border:1px solid var(--line); border-radius:8px; padding:10px;
+    display:flex; flex-direction:column; gap:8px; min-width:170px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.12);
+}
+.quick-nav-menu a{
+    color:var(--ink); text-decoration:none; font-size:13px; padding:6px 8px;
+    border-radius:4px; display:block;
+}
+.quick-nav-menu a:hover{ background:var(--cream-2); }
+.back-to-top{
+    position:fixed; bottom:18px; right:18px; z-index:999;
+    background:var(--clay-dark); color:var(--cream); border:none;
+    width:42px; height:42px; border-radius:50%; text-align:center; line-height:42px;
+    text-decoration:none; font-size:18px; box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+.back-to-top:hover{ background:var(--ink); }
 </head>
 <body>
+  <details class="quick-nav">
+  <summary class="quick-nav-btn">☰ Menú</summary>
+  <div class="quick-nav-menu">
+    <a href="#lodge">Casa de Campo</a>
+    <a href="#store">Taller</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</details>
 
-<section class="hero">
+<a href="#top" class="back-to-top">↑</a>
+
+<section class="hero" id="top">
   <canvas id="dots"></canvas>
   <div class="hero-content">
     <img class="hero-logo" src="logo.png" alt="Madiba — Casa · Taller · Campo. Un lugar para habitar, crear y compartir.">
